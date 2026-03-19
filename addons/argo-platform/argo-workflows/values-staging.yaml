@@ -1,0 +1,5 @@
+# Argo Workflows - Staging overrides
+
+artifactRepository:
+  s3:
+    bucket: aws-eks-staging-argo-artifacts

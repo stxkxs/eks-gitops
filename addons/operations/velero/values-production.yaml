@@ -1,0 +1,10 @@
+# Velero - Production overrides
+# Production: production backup bucket
+
+configuration:
+  backupStorageLocation:
+    - name: default
+      provider: aws
+      bucket: aws-eks-production-backups
+      config:
+        region: us-west-2
