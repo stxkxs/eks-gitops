@@ -1,0 +1,10 @@
+# Argo Workflows - Production overrides
+
+server:
+  serviceAccount:
+    annotations:
+      eks.amazonaws.com/role-arn: arn:aws:iam::351619759866:role/production-eks-argo-workflows
+
+artifactRepository:
+  s3:
+    bucket: aws-eks-production-argo-artifacts
