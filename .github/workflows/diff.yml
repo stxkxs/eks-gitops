@@ -37,7 +37,7 @@ jobs:
           echo "All overlays rendered."
 
       - name: Upload rendered manifests
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: rendered-${{ inputs.environment }}
           path: rendered/
