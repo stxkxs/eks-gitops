@@ -1,0 +1,6 @@
+# Argo Events - Staging overrides
+
+controller:
+  serviceAccount:
+    annotations:
+      eks.amazonaws.com/role-arn: arn:aws:iam::351619759866:role/staging-eks-argo-events

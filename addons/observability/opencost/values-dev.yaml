@@ -1,0 +1,5 @@
+# OpenCost - Dev overrides
+
+serviceAccount:
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::351619759866:role/dev-eks-opencost
