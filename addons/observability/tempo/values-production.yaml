@@ -1,0 +1,8 @@
+# Tempo - Production overrides
+# Production: longer retention, larger storage
+
+tempo:
+  retention: 720h
+
+persistence:
+  size: 100Gi

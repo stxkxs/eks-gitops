@@ -1,0 +1,9 @@
+# KEDA - Production overrides
+
+podDisruptionBudget:
+  operator:
+    minAvailable: 1
+  metricServer:
+    minAvailable: 1
+  webhooks:
+    minAvailable: 1

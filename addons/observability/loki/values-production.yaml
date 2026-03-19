@@ -1,0 +1,12 @@
+# Loki - Production overrides
+# Production: longer retention, larger storage
+
+loki:
+  commonConfig:
+    replication_factor: 1
+  limits_config:
+    retention_period: 2160h
+
+singleBinary:
+  persistence:
+    size: 100Gi

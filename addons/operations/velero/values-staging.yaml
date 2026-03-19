@@ -1,0 +1,10 @@
+# Velero - Staging overrides
+# Staging: staging backup bucket
+
+configuration:
+  backupStorageLocation:
+    - name: default
+      provider: aws
+      bucket: aws-eks-staging-backups
+      config:
+        region: us-west-2
