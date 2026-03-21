@@ -1,5 +1,9 @@
 # External Secrets Operator
 
+serviceAccount:
+  create: false
+  name: external-secrets
+
 replicaCount: 2
 
 resources:

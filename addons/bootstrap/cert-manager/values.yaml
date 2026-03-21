@@ -2,6 +2,10 @@
 
 installCRDs: true
 
+serviceAccount:
+  create: false
+  name: cert-manager
+
 replicaCount: 2
 
 resources:

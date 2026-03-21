@@ -1,6 +1,11 @@
 # Velero - Backup and Disaster Recovery
 # Adapted from aws-idp-gitops
 
+serviceAccount:
+  server:
+    create: false
+    name: velero
+
 resources:
   requests:
     cpu: 100m

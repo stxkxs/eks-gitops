@@ -1,5 +1,9 @@
 # External DNS
 
+serviceAccount:
+  create: false
+  name: external-dns
+
 provider:
   name: aws
 

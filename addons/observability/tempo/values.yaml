@@ -1,6 +1,10 @@
 # Tempo - Distributed Tracing
 # Adapted from aws-idp-gitops
 
+serviceAccount:
+  create: false
+  name: tempo
+
 tempo:
   receivers:
     otlp:
