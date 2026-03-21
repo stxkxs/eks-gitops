@@ -18,3 +18,7 @@ podDisruptionBudget:
   minAvailable: 1
 
 enableServiceMutatorWebhook: false
+
+serviceAccount:
+  create: false
+  name: aws-load-balancer-controller
