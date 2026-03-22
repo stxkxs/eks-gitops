@@ -1,6 +1,9 @@
 # Argo Workflows - Workflow orchestration
 
 server:
+  serviceAccount:
+    create: false
+    name: argo-workflows-server
   replicas: 2
   resources:
     requests:
@@ -44,6 +47,3 @@ artifactRepository:
       name: argo-workflows-s3
       key: secretKey
 
-serviceAccount:
-  create: false
-  name: argo-workflows-server

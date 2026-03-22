@@ -1,6 +1,9 @@
 # Argo Events - Event sources and sensors
 
 controller:
+  serviceAccount:
+    create: false
+    name: argo-events-controller-manager
   resources:
     requests:
       cpu: 50m
@@ -11,7 +14,3 @@ controller:
   tolerations:
     - key: CriticalAddonsOnly
       operator: Exists
-
-serviceAccount:
-  create: false
-  name: argo-events-controller-manager
