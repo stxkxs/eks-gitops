@@ -46,4 +46,3 @@ artifactRepository:
     secretKeySecret:
       name: argo-workflows-s3
       key: secretKey
-
