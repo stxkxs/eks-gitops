@@ -24,7 +24,7 @@ jobs:
         uses: imranismail/setup-kustomize@v2
 
       - name: Install Helm
-        uses: azure/setup-helm@v4
+        uses: azure/setup-helm@v5
 
       - name: Render overlays
         run: |
@@ -37,7 +37,7 @@ jobs:
           echo "All overlays rendered."
 
       - name: Upload rendered manifests
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: rendered-${{ inputs.environment }}
           path: rendered/
